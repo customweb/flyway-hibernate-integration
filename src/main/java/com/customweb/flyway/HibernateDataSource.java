@@ -61,7 +61,6 @@ public class HibernateDataSource implements DataSource{
 	}
 
 
-	@Override
 	public Logger getParentLogger() throws SQLFeatureNotSupportedException {
 		throw new SQLFeatureNotSupportedException();
 	}
