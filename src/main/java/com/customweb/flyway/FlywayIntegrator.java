@@ -3,13 +3,12 @@ package com.customweb.flyway;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import org.flywaydb.core.Flyway;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.engine.spi.SessionFactoryImplementor;
 import org.hibernate.integrator.spi.Integrator;
 import org.hibernate.metamodel.source.MetadataImplementor;
 import org.hibernate.service.spi.SessionFactoryServiceRegistry;
-
-import com.googlecode.flyway.core.Flyway;
 
 public class FlywayIntegrator implements Integrator {
 
