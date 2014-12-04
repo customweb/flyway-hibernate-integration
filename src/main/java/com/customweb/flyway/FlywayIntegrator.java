@@ -24,6 +24,7 @@ public class FlywayIntegrator implements Integrator {
 
 		final Flyway flyway = new Flyway();
 		flyway.setDataSource(new HibernateDataSource(sessionFactory));
+		flyway.setValidateOnMigrate(false);
 		flyway.migrate();
 		
 		logger.log(Level.INFO, "Finished Flyway Migration");
